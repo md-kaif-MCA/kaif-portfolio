@@ -12,11 +12,14 @@ app = FastAPI()
 # e.g., allow_origins=["https://your-portfolio-frontend.com"]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allows all origins (use with caution in production)
-    allow_methods=["*"],  # Allows all methods (GET, POST, etc.)
-    allow_headers=["*"],  # Allows all headers
+    allow_origins=[
+        "http://localhost:5173",
+        "https://mohd-kaif-portfolio.pages.dev"
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
-
 # --- OpenRouter API Key ---
 # It's highly recommended to use environment variables for API keys.
 # You can set it in your terminal before running the app:

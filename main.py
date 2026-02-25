@@ -24,7 +24,7 @@ app.add_middleware(
 # It's highly recommended to use environment variables for API keys.
 # You can set it in your terminal before running the app:
 # export OPENROUTER_API_KEY="sk-or-v1-YOUR_ACTUAL_KEY"
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "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") # Fallback key - REMOVE for production
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "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") # Fallback key - REMOVE for production
 
 # --- DATABASE SETUP ---
 # Initializes the SQLite database and creates the 'contacts' table if it doesn't exist.

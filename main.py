@@ -81,7 +81,7 @@ async def chat_with_ai(req: ChatRequest):
     # These models are chosen for their availability as 'free' tier on OpenRouter.
     # Your 500 error meant ALL of these were unavailable at that moment.
     free_models = [
-        "gryphe/mythomax-l2-13b:free",
+        "deepseek/deepseek-v3.2-exp",
         "deepseek/deepseek-v3.2",
         "openchat/openchat-7b:free",
         "liquid/lfm-40b:free", # This is a larger model, potentially slower but capable
